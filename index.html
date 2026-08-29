@@ -1,0 +1,1308 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Paseo Las Campanas · Inmobiliaria Su Vivienda</title>
+<meta name="description" content="Residencial Paseo Las Campanas — casas modelo Vella y Esperanza. Financiamiento RAP. Inmobiliaria Su Vivienda, Honduras." />
+
+<!-- ============================================================
+     GUIA RAPIDA DE EDICION
+     Busca los bloques marcados con "EDITAR:" para cambiar
+     telefono, WhatsApp, precios, areas y amenidades.
+     ============================================================ -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  /* ---- PALETA: BLANCO / NEGRO / NARANJA ---- */
+  --white:#ffffff;
+  --paper:#fafaf8;
+  --black:#0e0e0e;
+  --black-soft:#171717;
+  --ink:#141414;
+  --muted:#71716d;
+  --line:rgba(0,0,0,.1);
+  --line-dark:rgba(255,255,255,.12);
+  --orange:#ef8b21;        /* naranja del logo */
+  --orange-deep:#d97a12;
+  --shadow:0 30px 70px -30px rgba(0,0,0,.25);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+::selection{background:var(--orange);color:#fff}
+::-webkit-scrollbar{width:10px}
+::-webkit-scrollbar-track{background:var(--white)}
+::-webkit-scrollbar-thumb{background:#d9d9d4;border-radius:6px}
+::-webkit-scrollbar-thumb:hover{background:var(--orange)}
+body{
+  font-family:'Montserrat',system-ui,sans-serif;font-weight:400;
+  color:var(--ink);background:var(--white);
+  line-height:1.7;-webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+h1,h2,h3{font-family:'Montserrat',sans-serif;font-weight:700;line-height:1.18;letter-spacing:-.01em}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.wrap{max-width:1200px;margin:0 auto;padding:0 28px}
+.eyebrow{font-size:.66rem;letter-spacing:.34em;text-transform:uppercase;color:var(--orange);font-weight:600;
+  display:inline-flex;align-items:center;gap:14px}
+.eyebrow::before{content:"";width:34px;height:1px;background:var(--orange)}
+.eyebrow.center::before{display:none}
+
+/* ============ PRELOADER ============ */
+#loader{position:fixed;inset:0;z-index:200;background:var(--white);
+  display:grid;place-items:center;transition:opacity .8s ease,visibility .8s}
+#loader.done{opacity:0;visibility:hidden}
+.loader-inner{text-align:center}
+.loader-mark{width:72px;height:72px;margin:0 auto 22px;border-radius:50%;
+  border:1.5px solid var(--orange);display:grid;place-items:center;animation:pulse 2s ease infinite}
+.loader-mark svg{width:30px;height:30px}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(239,139,33,.2)}50%{box-shadow:0 0 0 16px rgba(239,139,33,0)}}
+.loader-word{letter-spacing:.42em;text-transform:uppercase;font-size:.8rem;color:var(--black);font-weight:700}
+.loader-sub{font-size:.58rem;letter-spacing:.5em;text-transform:uppercase;color:var(--orange);margin-top:8px;font-weight:600}
+.loader-line{width:120px;height:1px;background:var(--line);margin:22px auto 0;position:relative;overflow:hidden}
+.loader-line::after{content:"";position:absolute;left:0;top:0;height:100%;width:40%;
+  background:var(--orange);animation:slide 1.2s ease-in-out infinite}
+@keyframes slide{0%{transform:translateX(-100%)}100%{transform:translateX(350%)}}
+
+/* ============ NAV ============ */
+header.nav{
+  position:fixed;top:0;left:0;right:0;z-index:90;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:20px 34px;transition:.4s;
+}
+header.nav.scrolled{background:rgba(255,255,255,.88);backdrop-filter:blur(18px);
+  border-bottom:1px solid var(--line);padding:13px 34px}
+.brand{display:flex;align-items:center;gap:13px}
+.brand .mark{width:42px;height:42px;border-radius:50%;flex:0 0 auto;
+  border:1.5px solid var(--orange);display:grid;place-items:center;background:#fff}
+.brand .mark svg{width:20px;height:20px}
+.brand .bt{line-height:1.2}
+.brand .bt b{color:var(--black);letter-spacing:.16em;font-weight:800;font-size:.9rem;text-transform:uppercase}
+.brand small{display:block;font-size:.54rem;letter-spacing:.4em;text-transform:uppercase;color:var(--orange);font-weight:600}
+nav.links{display:flex;gap:30px;align-items:center}
+nav.links a{font-size:.74rem;color:var(--muted);transition:.25s;letter-spacing:.16em;text-transform:uppercase;font-weight:500}
+nav.links a:hover{color:var(--black)}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  padding:15px 30px;border-radius:2px;font-size:.7rem;font-weight:700;
+  letter-spacing:.22em;text-transform:uppercase;
+  background:var(--orange);color:#fff;
+  border:0;cursor:pointer;transition:.3s;white-space:nowrap;
+}
+.btn:hover{transform:translateY(-2px);box-shadow:0 16px 36px -12px rgba(239,139,33,.5);background:var(--orange-deep)}
+.btn.dark{background:var(--black);color:#fff}
+.btn.dark:hover{box-shadow:0 16px 36px -12px rgba(0,0,0,.4);background:#000}
+.btn.ghost{background:transparent;color:var(--black);border:1px solid rgba(0,0,0,.25);box-shadow:none}
+.btn.ghost:hover{border-color:var(--black);box-shadow:none;transform:translateY(-2px)}
+.btn.ghost.light{color:#fff;border-color:rgba(255,255,255,.4)}
+.btn.ghost.light:hover{border-color:#fff}
+.nav-toggle{display:none;background:none;border:0;cursor:pointer;color:var(--black)}
+
+/* ============ HERO — RENDER FRONTAL ANIMADO (VIDEO) ============ */
+.hero{position:relative;min-height:100vh;display:flex;align-items:flex-end;overflow:hidden;background:var(--black)}
+.hero-bg{position:absolute;inset:0;z-index:1;overflow:hidden}
+.hero-bg .shot{position:absolute;inset:0;opacity:0;transition:opacity 1.4s ease}
+.hero-bg .shot.on{opacity:1}
+.hero-bg .shot img{width:100%;height:100%;object-fit:cover;object-position:center 62%;
+  transform-origin:center 60%}
+/* plano frontal animado: zoom lento tipo video */
+.hero-bg .shot.on img{animation:kenburns 26s ease-in-out infinite alternate}
+@keyframes kenburns{
+  0%{transform:scale(1.02)}
+  100%{transform:scale(1.16)}
+}
+/* legibilidad */
+.hero::after{content:"";position:absolute;inset:0;z-index:2;pointer-events:none;
+  background:linear-gradient(180deg,rgba(0,0,0,.34) 0%,rgba(0,0,0,0) 34%,rgba(0,0,0,.05) 55%,rgba(0,0,0,.78) 100%)}
+.hero-copy{position:relative;z-index:3;width:100%;padding-bottom:64px}
+.hero .kicker{display:flex;align-items:center;gap:16px;font-size:.62rem;letter-spacing:.4em;text-transform:uppercase;color:#fff;font-weight:600}
+.hero .kicker::before{content:"";width:34px;height:1px;background:var(--orange)}
+.hero h1{font-size:clamp(2.2rem,5.4vw,4.2rem);margin:18px 0 14px;color:#fff;font-weight:800;
+  text-transform:uppercase;letter-spacing:.02em;line-height:1.05}
+.hero h1 em{font-style:normal;color:var(--orange)}
+.hero p.lead{font-size:1rem;color:rgba(255,255,255,.82);max-width:520px;font-weight:400}
+.hero p.lead strong{color:#fff;font-weight:600}
+.hero-cta{display:flex;gap:14px;margin-top:30px;flex-wrap:wrap}
+.hero-bottom{display:flex;align-items:flex-end;justify-content:space-between;gap:30px;flex-wrap:wrap}
+.hero-stats{display:flex;flex-wrap:wrap;border-top:1px solid rgba(255,255,255,.22);padding-top:22px;margin-top:36px}
+.hero-stats .s{padding-right:36px;margin-right:36px;border-right:1px solid rgba(255,255,255,.22)}
+.hero-stats .s:last-child{border-right:0;margin-right:0;padding-right:0}
+.hero-stats .s b{font-weight:800;font-size:1.4rem;display:block;color:#fff}
+.hero-stats .s span{font-size:.6rem;color:rgba(255,255,255,.6);letter-spacing:.26em;text-transform:uppercase;font-weight:500}
+
+/* selector de modelo (cambia el render) */
+.model-switch{position:absolute;z-index:5;right:34px;top:110px;
+  background:rgba(255,255,255,.9);backdrop-filter:blur(14px);
+  border:1px solid var(--line);border-radius:2px;padding:6px;display:flex;gap:5px;box-shadow:var(--shadow)}
+.model-switch button{border:0;background:transparent;padding:11px 20px;border-radius:2px;
+  cursor:pointer;font:inherit;font-size:.64rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--muted);transition:.25s}
+.model-switch button.active{background:var(--black);color:#fff}
+@media(max-width:760px){.model-switch{right:16px;top:92px}}
+/* etiqueta de "grabando" estilo video */
+.rec{position:absolute;z-index:5;left:34px;top:116px;display:flex;align-items:center;gap:9px;
+  font-size:.6rem;letter-spacing:.3em;text-transform:uppercase;color:#fff;font-weight:600;
+  background:rgba(0,0,0,.35);backdrop-filter:blur(8px);padding:9px 16px;border:1px solid rgba(255,255,255,.18)}
+.rec i{width:8px;height:8px;border-radius:50%;background:var(--orange);animation:blink 1.6s ease infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.25}}
+@media(max-width:760px){.rec{left:16px;top:98px}}
+
+/* ============ MARQUEE ============ */
+.marquee{border-block:1px solid var(--line);padding:20px 0;overflow:hidden;background:var(--white)}
+.marquee .track{display:flex;white-space:nowrap;animation:mq 30s linear infinite;width:max-content}
+.marquee span{font-weight:600;font-size:.66rem;letter-spacing:.34em;text-transform:uppercase;color:var(--muted);
+  padding:0 28px;display:inline-flex;align-items:center;gap:56px}
+.marquee span::after{content:"✦";color:var(--orange);font-size:.65rem}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+/* ============ SECTIONS ============ */
+section{padding:120px 0;position:relative}
+.sec-head{max-width:660px;margin-bottom:60px}
+.sec-head h2{font-size:clamp(1.7rem,3.4vw,2.6rem);margin:20px 0 16px;color:var(--black);font-weight:700}
+.sec-head h2 em{font-style:normal;color:var(--orange)}
+.sec-head p{color:var(--muted);font-size:1rem}
+.sec-head.center{margin-inline:auto;text-align:center}
+
+/* grids / cards */
+.grid{display:grid;gap:1px;background:var(--line);border:1px solid var(--line)}
+.g-3{grid-template-columns:repeat(3,1fr)}
+@media(max-width:900px){.g-3{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.g-3{grid-template-columns:1fr}}
+.card{background:var(--white);padding:42px 36px;transition:.35s;position:relative}
+.card:hover{background:var(--paper)}
+.card .ico{width:44px;height:44px;margin:0 0 20px;color:var(--orange);
+  display:grid;place-items:center;border:1px solid var(--line);border-radius:50%}
+.card .ico svg{width:20px;height:20px}
+.card h3{font-size:1.05rem;margin-bottom:10px;color:var(--black);font-weight:700;letter-spacing:.02em}
+.card p{color:var(--muted);font-size:.88rem}
+
+/* ============ STATEMENT ============ */
+.statement{padding:140px 0;text-align:center;background:var(--paper);border-block:1px solid var(--line)}
+.statement .rule{width:1px;height:64px;background:linear-gradient(180deg,transparent,var(--orange));margin:0 auto 32px}
+.statement h2{font-size:clamp(1.6rem,3.6vw,2.8rem);font-weight:300;color:var(--black);max-width:860px;margin:0 auto;line-height:1.3;text-transform:uppercase;letter-spacing:.06em}
+.statement h2 em{font-style:normal;color:var(--orange);font-weight:800}
+.statement .sig{margin-top:34px;font-size:.6rem;letter-spacing:.42em;text-transform:uppercase;color:var(--muted);font-weight:600}
+
+/* ============ MODELOS ============ */
+.model{display:grid;grid-template-columns:1.05fr 1fr;gap:0;align-items:stretch;
+  background:var(--white);border:1px solid var(--line);overflow:hidden}
+.model + .model{margin-top:56px}
+.model.rev{grid-template-columns:1fr 1.05fr}
+.model.rev .model-visual{order:2}
+.model-visual{min-height:460px;position:relative;overflow:hidden;background:var(--paper)}
+.model-visual img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0;transition:transform 1.2s cubic-bezier(.2,.6,.2,1)}
+.model:hover .model-visual img{transform:scale(1.05)}
+.model-visual .tag{position:absolute;top:22px;left:22px;z-index:2;color:#fff;
+  font-size:.6rem;letter-spacing:.3em;text-transform:uppercase;padding:10px 16px;font-weight:700;
+  background:rgba(0,0,0,.55);backdrop-filter:blur(6px)}
+.model-body{padding:54px}
+@media(max-width:880px){.model,.model.rev{grid-template-columns:1fr}.model.rev .model-visual{order:0}
+  .model-body{padding:36px 26px}.model-visual{min-height:300px}}
+.model-body .mnum{font-size:.62rem;letter-spacing:.34em;text-transform:uppercase;color:var(--orange);font-weight:700}
+.model-body h3{font-size:1.8rem;color:var(--black);font-weight:800;margin-top:10px;text-transform:uppercase;letter-spacing:.05em}
+.model-body .sub{color:var(--muted);margin-top:10px;font-size:.92rem}
+.spec-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);
+  border:1px solid var(--line);margin:28px 0}
+@media(max-width:500px){.spec-grid{grid-template-columns:1fr 1fr}}
+.spec-grid .sp{background:var(--white);padding:16px 10px;text-align:center}
+.spec-grid .sp b{font-weight:800;font-size:1.15rem;display:block;color:var(--black)}
+.spec-grid .sp span{font-size:.56rem;color:var(--muted);letter-spacing:.18em;text-transform:uppercase;font-weight:500}
+.detail-cols{display:grid;grid-template-columns:1fr 1fr;gap:4px 30px;margin:6px 0 4px}
+@media(max-width:500px){.detail-cols{grid-template-columns:1fr}}
+ul.ticks{list-style:none}
+ul.ticks li{padding-left:24px;position:relative;color:var(--muted);margin:8px 0;font-size:.86rem}
+ul.ticks li::before{content:"";position:absolute;left:0;top:.75em;width:12px;height:1px;background:var(--orange)}
+.model-body h4{font-size:.6rem;letter-spacing:.3em;text-transform:uppercase;
+  color:var(--black);margin:24px 0 10px;font-weight:700}
+.price-row{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;
+  margin-top:28px;padding-top:26px;border-top:1px solid var(--line)}
+.price{font-weight:700;font-size:1rem;color:var(--black);text-transform:uppercase;letter-spacing:.06em}
+.price small{font-size:.72rem;color:var(--muted);font-weight:400;display:block;letter-spacing:.02em;margin-top:4px;text-transform:none}
+
+/* ============ COMPARATIVA ============ */
+.compare{overflow-x:auto;border:1px solid var(--line)}
+.compare table{width:100%;border-collapse:collapse;min-width:560px}
+.compare th,.compare td{padding:17px 26px;text-align:left;font-size:.88rem;border-bottom:1px solid var(--line)}
+.compare thead th{background:var(--black);font-weight:700;font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:#fff}
+.compare thead th:first-child{font-size:.6rem;letter-spacing:.3em;color:var(--orange);vertical-align:bottom}
+.compare tbody th{font-weight:500;color:var(--muted);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;width:34%}
+.compare td{color:var(--ink)}
+.compare tbody tr:hover{background:var(--paper)}
+.compare .gold-td{color:var(--orange);font-weight:800;font-size:1rem}
+
+/* ============ PROCESO ============ */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+@media(max-width:900px){.steps{grid-template-columns:1fr 1fr}}
+@media(max-width:540px){.steps{grid-template-columns:1fr}}
+.step{background:var(--white);padding:38px 32px;transition:.3s}
+.step:hover{background:var(--paper)}
+.step .num{font-weight:800;font-size:2.4rem;line-height:1;
+  color:transparent;-webkit-text-stroke:1.5px var(--orange)}
+.step h3{font-size:.92rem;margin:16px 0 8px;color:var(--black);font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.step p{font-size:.84rem;color:var(--muted)}
+
+/* ============ FINANCIAMIENTO (banda negra) ============ */
+.band{background:var(--black);color:#fff;padding:76px;position:relative;overflow:hidden}
+.band::before{content:"";position:absolute;inset:0;
+  background:radial-gradient(640px 300px at 10% -10%,rgba(239,139,33,.16),transparent),
+             radial-gradient(520px 300px at 100% 115%,rgba(239,139,33,.1),transparent)}
+.band>*{position:relative}
+.band-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:60px;align-items:start}
+@media(max-width:880px){.band{padding:44px 26px}.band-grid{grid-template-columns:1fr}}
+.band h2{color:#fff;font-size:clamp(1.5rem,3vw,2.2rem);margin:18px 0 18px;font-weight:700}
+.band h2 em{font-style:normal;color:var(--orange)}
+.band p{color:rgba(255,255,255,.68)}
+.band ul.ticks li{color:rgba(255,255,255,.78)}
+.pill-row{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line-dark);border:1px solid var(--line-dark);margin-top:30px}
+@media(max-width:500px){.pill-row{grid-template-columns:1fr}}
+.pill{background:var(--black-soft);padding:18px 22px;font-size:.8rem;color:rgba(255,255,255,.6)}
+.pill b{color:var(--orange);display:block;font-weight:700;font-size:.92rem;margin-bottom:2px;letter-spacing:.04em}
+.req-card{border:1px solid var(--line-dark);padding:38px;background:rgba(255,255,255,.03)}
+.req-card h3{color:#fff;font-size:1rem;margin-bottom:18px;font-weight:700;display:flex;align-items:center;gap:12px;
+  text-transform:uppercase;letter-spacing:.1em}
+.req-card h3 svg{width:20px;height:20px;color:var(--orange)}
+.req-card .note{margin-top:18px;font-size:.78rem;color:rgba(255,255,255,.5)}
+.fin-logos{display:flex;gap:1px;background:var(--line-dark);border:1px solid var(--line-dark);margin-top:26px}
+.fin-logos .fl{background:#fff;padding:14px 20px;display:grid;place-items:center;flex:1;min-height:84px}
+.fin-logos img{max-height:52px;width:auto;max-width:170px;object-fit:contain}
+.fin-note{font-size:.64rem;color:rgba(255,255,255,.4);margin-top:10px;letter-spacing:.06em}
+.tasa-presets{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap}
+.tasa-presets button{border:1px solid var(--line);background:var(--paper);padding:8px 12px;
+  font:inherit;font-size:.62rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;
+  cursor:pointer;transition:.2s;color:var(--muted)}
+.tasa-presets button:hover,.tasa-presets button.on{background:var(--orange);border-color:var(--orange);color:#fff}
+
+/* ============ TESTIMONIOS ============ */
+.testi{background:var(--white);padding:42px 36px;position:relative}
+.testi p{color:var(--ink);font-size:.92rem;font-weight:300;line-height:1.7}
+.testi .who{display:flex;align-items:center;gap:14px;margin-top:24px}
+.testi .who .av{width:44px;height:44px;border-radius:50%;border:1px solid var(--orange);
+  display:grid;place-items:center;color:var(--orange);font-size:.74rem;font-weight:700;letter-spacing:.08em}
+.testi .who b{display:block;font-size:.84rem;color:var(--black);font-weight:700}
+.testi .who span{font-size:.66rem;color:var(--muted);letter-spacing:.14em;text-transform:uppercase}
+.stars{color:var(--orange);letter-spacing:4px;font-size:.78rem;margin-bottom:14px}
+
+/* ============ UBICACION ============ */
+.loc{display:grid;grid-template-columns:1fr 1fr;gap:0;align-items:stretch;border:1px solid var(--line)}
+@media(max-width:880px){.loc{grid-template-columns:1fr}}
+.loc-card{background:var(--black);color:#fff;padding:56px;position:relative;overflow:hidden}
+.loc-card::after{content:"";position:absolute;right:-70px;top:-70px;width:240px;height:240px;border-radius:50%;
+  border:1px solid rgba(239,139,33,.3)}
+.loc-card h2{color:#fff;font-size:clamp(1.4rem,2.6vw,2rem);margin-top:18px;font-weight:700}
+.loc-card h2 em{font-style:normal;color:var(--orange)}
+.loc-card p{color:rgba(255,255,255,.65);margin-top:16px;font-size:.92rem}
+.loc-list{margin-top:30px;display:grid;position:relative}
+.loc-list div{display:flex;justify-content:space-between;border-bottom:1px solid var(--line-dark);padding:12px 0;font-size:.86rem;color:rgba(255,255,255,.85)}
+.loc-list div span:last-child{color:var(--orange);font-weight:700}
+.map-embed{min-height:420px;filter:grayscale(1) contrast(1.05)}
+.map-embed iframe{width:100%;height:100%;min-height:420px;border:0;display:block}
+@media(max-width:880px){.loc-card{padding:38px 26px}}
+
+/* ============ GALERIA ============ */
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.gallery .tile{overflow:hidden;aspect-ratio:1;position:relative;background:var(--paper);cursor:pointer}
+.gallery .tile img{width:100%;height:100%;object-fit:cover;transition:transform .7s cubic-bezier(.2,.6,.2,1)}
+.gallery .tile:hover img{transform:scale(1.06)}
+.gallery .tile.big{grid-column:span 2;grid-row:span 2;aspect-ratio:auto}
+.gallery .tile .cap{position:absolute;left:14px;bottom:12px;z-index:2;font-size:.58rem;letter-spacing:.26em;text-transform:uppercase;
+  color:#fff;background:rgba(0,0,0,.55);padding:8px 13px;backdrop-filter:blur(6px);font-weight:600}
+.gallery .tile::after{content:"";position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(180deg,transparent 55%,rgba(239,139,33,.28));opacity:0;transition:.45s}
+.gallery .tile:hover::after{opacity:1}
+@media(max-width:640px){.gallery{grid-template-columns:1fr 1fr}.gallery .tile.big{grid-column:span 2;grid-row:auto;aspect-ratio:16/10}}
+
+/* ============ FAQ ============ */
+.faq{max-width:840px;margin:0 auto;border:1px solid var(--line)}
+.faq details{background:var(--white);border-bottom:1px solid var(--line)}
+.faq details:last-child{border-bottom:0}
+.faq details[open]{background:var(--paper)}
+.faq summary{cursor:pointer;list-style:none;padding:24px 30px;font-weight:600;font-size:.9rem;color:var(--black);
+  display:flex;justify-content:space-between;align-items:center;gap:16px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-weight:300;font-size:1.6rem;color:var(--orange);transition:.3s;line-height:1}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq .a{padding:0 30px 26px;color:var(--muted);font-size:.9rem}
+
+/* ============ CONTACTO ============ */
+.contact{display:grid;grid-template-columns:1fr 1.05fr;gap:60px;align-items:start}
+@media(max-width:880px){.contact{grid-template-columns:1fr}}
+.contact-info h2{font-size:clamp(1.6rem,3.2vw,2.4rem);margin:20px 0 18px;color:var(--black);font-weight:700}
+.contact-info h2 em{font-style:normal;color:var(--orange)}
+.contact-info>p{color:var(--muted);margin-bottom:30px;font-size:.95rem}
+.ci-item{display:flex;gap:16px;align-items:center;padding:17px 0;border-bottom:1px solid var(--line);transition:.25s}
+.ci-item:hover{padding-left:8px}
+.ci-item:hover b{color:var(--orange)}
+.ci-item .ico{width:44px;height:44px;border-radius:50%;border:1px solid var(--line);
+  display:grid;place-items:center;color:var(--orange);flex:0 0 auto}
+.ci-item .ico svg{width:19px;height:19px}
+.ci-item b{display:block;font-size:.86rem;color:var(--black);font-weight:700;transition:.25s;letter-spacing:.04em}
+.ci-item span{font-size:.8rem;color:var(--muted)}
+.sched{margin-top:26px;border:1px solid var(--line);padding:20px 24px;display:flex;gap:16px;align-items:center;background:var(--paper)}
+.sched .ico{color:var(--orange)}
+.sched b{font-size:.78rem;display:block;color:var(--black);letter-spacing:.08em;text-transform:uppercase;font-weight:700}
+.sched span{font-size:.78rem;color:var(--muted)}
+
+form.lead-form{background:var(--white);border:1px solid var(--line);padding:44px;position:relative;box-shadow:var(--shadow)}
+form.lead-form::before{content:"";position:absolute;top:-1px;left:-1px;right:-1px;height:3px;background:var(--orange)}
+form.lead-form h3{font-size:1.05rem;margin-bottom:8px;color:var(--black);font-weight:800;text-transform:uppercase;letter-spacing:.08em}
+form.lead-form p.fh{color:var(--muted);font-size:.84rem;margin-bottom:26px}
+.field{margin-bottom:18px}
+.field label{display:block;font-size:.6rem;font-weight:700;margin-bottom:8px;color:var(--black);
+  letter-spacing:.24em;text-transform:uppercase}
+.field input,.field select,.field textarea{
+  width:100%;padding:14px 16px;border:1px solid var(--line);border-radius:2px;
+  font:inherit;font-size:.9rem;background:var(--paper);transition:.25s;color:var(--ink)}
+.field input::placeholder,.field textarea::placeholder{color:#a9a9a4}
+.field input:focus,.field select:focus,.field textarea:focus{outline:0;border-color:var(--orange);background:#fff;
+  box-shadow:0 0 0 3px rgba(239,139,33,.12)}
+.field textarea{resize:vertical;min-height:96px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:460px){.two{grid-template-columns:1fr}}
+form.lead-form .btn{width:100%;margin-top:8px}
+.form-note{font-size:.7rem;color:var(--muted);text-align:center;margin-top:14px}
+
+/* ============ FOOTER ============ */
+footer{background:var(--black);color:#fff;padding:70px 0 40px}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:44px;padding-bottom:46px;border-bottom:1px solid var(--line-dark)}
+@media(max-width:760px){.foot-grid{grid-template-columns:1fr}}
+.foot-grid h4{font-size:.6rem;letter-spacing:.34em;text-transform:uppercase;color:var(--orange);margin-bottom:20px;font-weight:700}
+.foot-grid a,.foot-grid p{display:block;color:rgba(255,255,255,.6);font-size:.84rem;margin:9px 0;transition:.2s}
+.foot-grid a:hover{color:var(--orange)}
+footer .brand .bt b{color:#fff}
+.foot-bottom{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-top:28px;align-items:center}
+.foot-bottom small{color:rgba(255,255,255,.4);font-size:.72rem;letter-spacing:.04em}
+
+/* reveal */
+.reveal{opacity:0;transform:translateY(30px);transition:opacity .9s cubic-bezier(.16,.7,.2,1),transform .9s cubic-bezier(.16,.7,.2,1)}
+.reveal.in{opacity:1;transform:none}
+
+/* ============ CAPAS PREMIUM ============ */
+.frame{position:fixed;inset:14px;border:1px solid rgba(0,0,0,.12);z-index:70;pointer-events:none}
+@media(max-width:760px){.frame{display:none}}
+body::after{content:"";position:fixed;inset:0;z-index:65;pointer-events:none;opacity:.032;
+  background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300"><filter id="n"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2"/></filter><rect width="300" height="300" filter="url(%23n)" opacity="0.7"/></svg>')}
+#progress{position:fixed;top:0;left:0;height:2px;width:0;z-index:96;background:var(--orange)}
+.cursor-ring{position:fixed;z-index:120;pointer-events:none;border-radius:50%;
+  width:34px;height:34px;border:1px solid rgba(239,139,33,.55);
+  transform:translate(-50%,-50%);transition:width .3s,height .3s,border-color .3s,opacity .3s;opacity:0}
+.cursor-ring.on{opacity:1}
+.cursor-ring.big{width:58px;height:58px;border-color:var(--orange)}
+@media(hover:none),(max-width:880px){.cursor-ring{display:none}}
+
+/* ============ CALCULADORA DE CUOTA ============ */
+.calc{display:grid;grid-template-columns:1.1fr 1fr;gap:0;border:1px solid var(--line);align-items:stretch}
+@media(max-width:880px){.calc{grid-template-columns:1fr}}
+.calc-controls{background:var(--white);padding:50px}
+@media(max-width:880px){.calc-controls{padding:34px 26px}}
+.calc-field{margin-bottom:30px}
+.calc-field .cf-head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:12px}
+.calc-field label{font-size:.62rem;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--black)}
+.calc-field output{font-weight:800;font-size:1.05rem;color:var(--orange)}
+.calc-field input[type=range]{width:100%;accent-color:var(--orange);cursor:pointer;height:4px}
+.calc-result{background:var(--black);color:#fff;padding:50px;display:flex;flex-direction:column;justify-content:center;position:relative;overflow:hidden}
+.calc-result::before{content:"";position:absolute;inset:0;
+  background:radial-gradient(420px 220px at 90% -10%,rgba(239,139,33,.22),transparent)}
+.calc-result>*{position:relative}
+@media(max-width:880px){.calc-result{padding:38px 26px}}
+.calc-result .cr-label{font-size:.6rem;letter-spacing:.32em;text-transform:uppercase;color:rgba(255,255,255,.55);font-weight:600}
+.calc-result .cr-amount{font-size:clamp(2.2rem,4.6vw,3.4rem);font-weight:800;color:var(--orange);margin:10px 0 4px;letter-spacing:-.01em}
+.calc-result .cr-amount small{font-size:1rem;color:rgba(255,255,255,.6);font-weight:500}
+.calc-result .cr-sub{font-size:.8rem;color:rgba(255,255,255,.6)}
+.calc-result .cr-rows{margin:26px 0;display:grid;gap:0}
+.calc-result .cr-rows div{display:flex;justify-content:space-between;font-size:.84rem;padding:10px 0;border-bottom:1px solid var(--line-dark);color:rgba(255,255,255,.75)}
+.calc-result .cr-rows div b{color:#fff;font-weight:700}
+.calc-result .disclaimer{font-size:.66rem;color:rgba(255,255,255,.4);margin-top:18px}
+
+/* ============ BOT ASESOR ============ */
+.bot-fab{position:fixed;left:24px;bottom:24px;z-index:80;width:56px;height:56px;border-radius:50%;
+  background:var(--black);display:grid;place-items:center;cursor:pointer;border:0;
+  box-shadow:0 14px 34px -8px rgba(0,0,0,.45);transition:.25s}
+.bot-fab:hover{transform:scale(1.08)}
+.bot-fab svg{width:26px;height:26px;stroke:var(--orange)}
+.bot-fab .dot{position:absolute;top:2px;right:2px;width:13px;height:13px;border-radius:50%;
+  background:var(--orange);border:2.5px solid #fff;animation:blink 2s ease infinite}
+.bot-panel{position:fixed;left:24px;bottom:94px;z-index:110;width:360px;max-width:calc(100vw - 32px);
+  background:var(--white);border:1px solid var(--line);box-shadow:0 40px 90px -30px rgba(0,0,0,.4);
+  display:flex;flex-direction:column;overflow:hidden;
+  opacity:0;transform:translateY(16px) scale(.98);pointer-events:none;transition:.35s cubic-bezier(.2,.7,.2,1)}
+.bot-panel.open{opacity:1;transform:none;pointer-events:auto}
+@media(max-width:480px){.bot-panel{left:16px;right:16px;width:auto;bottom:90px}}
+.bot-head{background:var(--black);color:#fff;padding:18px 20px;display:flex;align-items:center;gap:13px}
+.bot-head .ava{width:38px;height:38px;border-radius:50%;background:var(--orange);display:grid;place-items:center;flex:0 0 auto}
+.bot-head .ava svg{width:20px;height:20px;stroke:#fff}
+.bot-head b{font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;font-weight:700;display:block}
+.bot-head span{font-size:.66rem;color:rgba(255,255,255,.55);display:flex;align-items:center;gap:6px}
+.bot-head span i{width:7px;height:7px;border-radius:50%;background:#3ddc7c;display:inline-block}
+.bot-close{margin-left:auto;background:none;border:0;color:rgba(255,255,255,.6);cursor:pointer;font-size:1.3rem;line-height:1}
+.bot-close:hover{color:#fff}
+.bot-body{padding:18px;height:340px;overflow-y:auto;background:var(--paper);display:flex;flex-direction:column;gap:10px}
+.bot-msg{max-width:85%;padding:12px 15px;font-size:.84rem;line-height:1.55;white-space:pre-line}
+.bot-msg.bot{background:var(--white);border:1px solid var(--line);color:var(--ink);align-self:flex-start}
+.bot-msg.user{background:var(--black);color:#fff;align-self:flex-end}
+.bot-opts{display:flex;flex-wrap:wrap;gap:8px;align-self:flex-start;max-width:95%}
+.bot-opts button{border:1px solid var(--orange);background:#fff;color:var(--black);padding:9px 14px;
+  font:inherit;font-size:.72rem;font-weight:600;cursor:pointer;transition:.2s;letter-spacing:.04em}
+.bot-opts button:hover{background:var(--orange);color:#fff}
+.bot-typing{display:inline-flex;gap:5px;padding:14px 16px;background:var(--white);border:1px solid var(--line);align-self:flex-start}
+.bot-typing i{width:7px;height:7px;border-radius:50%;background:var(--orange);animation:tp 1s ease infinite}
+.bot-typing i:nth-child(2){animation-delay:.15s}
+.bot-typing i:nth-child(3){animation-delay:.3s}
+@keyframes tp{0%,100%{opacity:.25;transform:translateY(0)}50%{opacity:1;transform:translateY(-3px)}}
+
+/* floating whatsapp */
+.wa-float{position:fixed;right:24px;bottom:24px;z-index:80;width:56px;height:56px;border-radius:50%;
+  background:#25d366;display:grid;place-items:center;box-shadow:0 14px 34px -8px rgba(37,211,102,.55);transition:.25s}
+.wa-float:hover{transform:scale(1.08)}
+.wa-float svg{width:29px;height:29px;fill:#fff}
+
+/* mobile nav */
+@media(max-width:880px){
+  nav.links{position:fixed;inset:0 0 auto 0;top:0;flex-direction:column;background:var(--white);
+    padding:100px 34px 40px;transform:translateY(-110%);transition:.45s;gap:22px;align-items:flex-start;z-index:85;
+    border-bottom:2px solid var(--orange)}
+  nav.links.open{transform:none}
+  nav.links a{font-size:.9rem}
+  .nav-toggle{display:block;z-index:95}
+  header.nav .btn.nav-cta{display:none}
+  header.nav.scrolled .nav-toggle{color:var(--black)}
+}
+.hero .nav-white{color:#fff}
+</style>
+</head>
+<body>
+
+<div id="progress"></div>
+<div class="frame" aria-hidden="true"></div>
+<div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+<!-- ============ PRELOADER ============ -->
+<div id="loader">
+  <div class="loader-inner">
+    <div class="loader-mark">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#0e0e0e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5" stroke="#ef8b21"/><path d="M5 9.5V21h14V9.5"/><path d="M9.5 21v-6h5v6"/></svg>
+    </div>
+    <div class="loader-word">Su Vivienda</div>
+    <div class="loader-sub">Inmobiliaria</div>
+    <div class="loader-line"></div>
+  </div>
+</div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <a class="brand" href="#top">
+    <span class="mark" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#0e0e0e" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5" stroke="#ef8b21"/><path d="M5 9.5V21h14V9.5"/><path d="M9.5 21v-6h5v6"/></svg>
+    </span>
+    <span class="bt"><b id="brandName">Su Vivienda</b><small>Inmobiliaria</small></span>
+  </a>
+  <nav class="links" id="menu">
+    <a href="#proyecto">Proyecto</a>
+    <a href="#modelos">Modelos</a>
+    <a href="#comparativa">Comparativa</a>
+    <a href="#financiamiento">Financiamiento</a>
+    <a href="#calculadora">Calculadora</a>
+    <a href="#ubicacion">Ubicación</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+  <a class="btn nav-cta" href="#contacto">Agendar visita</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Menú">
+    <svg width="27" height="27" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+  </button>
+</header>
+
+<!-- ============ HERO — RENDER FRONTAL EN VIDEO ============ -->
+<div class="hero" id="top">
+  <div class="hero-bg" id="heroBg">
+    <div class="shot on" data-model="vella"><img src="img/vella.jpg" alt="Render frontal Modelo Vella" /></div>
+    <div class="shot" data-model="esperanza"><img src="img/esperanza.jpg" alt="Render frontal Modelo Esperanza" /></div>
+  </div>
+
+  <div class="rec" aria-hidden="true"><i></i>Render · Plano frontal</div>
+
+  <div class="model-switch" id="modelSwitch">
+    <button data-model="vella" class="active">Vella</button>
+    <button data-model="esperanza">Esperanza</button>
+  </div>
+
+  <div class="wrap hero-copy">
+    <span class="kicker reveal">Residencial · Paseo Las Campanas</span>
+    <h1 class="reveal">Te acercamos<br>a <em>lo tuyo</em></h1>
+    <p class="lead reveal">Casas modelo <strong>Vella</strong> y <strong>Esperanza</strong> en Paseo Las Campanas, con acabados modernos y financiamiento <strong>RAP</strong> preferencial.</p>
+    <div class="hero-cta reveal">
+      <a class="btn" href="#modelos">Ver modelos</a>
+      <a class="btn ghost light" href="#contacto">Agendar visita</a>
+    </div>
+    <div class="hero-stats reveal">
+      <!-- EDITAR: ajusta cifras del proyecto -->
+      <div class="s"><b>02</b><span>Modelos</span></div>
+      <div class="s"><b>65 m²</b><span>Desde</span></div>
+      <div class="s"><b>4%</b><span>Tasa desde</span></div>
+      <div class="s"><b>30</b><span>Años de plazo</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ MARQUEE ============ -->
+<div class="marquee" aria-hidden="true">
+  <div class="track">
+    <span>Paseo Las Campanas</span><span>Modelo Vella</span><span>Modelo Esperanza</span><span>Financiamiento RAP</span><span>Fondos BANHPROVI</span><span>Te acercamos a lo tuyo</span><span>Honduras</span>
+    <span>Paseo Las Campanas</span><span>Modelo Vella</span><span>Modelo Esperanza</span><span>Financiamiento RAP</span><span>Fondos BANHPROVI</span><span>Te acercamos a lo tuyo</span><span>Honduras</span>
+  </div>
+</div>
+
+<!-- ============ PROYECTO ============ -->
+<section id="proyecto">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">01 — El proyecto</span>
+      <h2>Un residencial pensado <em>en cada detalle</em></h2>
+      <p>Paseo Las Campanas combina diseño contemporáneo, seguridad y plusvalía. Cada casa está construida con materiales de primera y una distribución que aprovecha la luz natural.</p>
+    </div>
+    <div class="grid g-3">
+      <!-- EDITAR: cambia estos beneficios segun el proyecto -->
+      <div class="card reveal">
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4.5 8-11a8 8 0 1 0-16 0c0 6.5 8 11 8 11Z"/><circle cx="12" cy="11" r="3"/></svg></span>
+        <h3>Ubicación con plusvalía</h3>
+        <p>Zona en pleno crecimiento, conectada con comercios, centros educativos y vías principales. Una inversión que gana valor cada año.</p>
+      </div>
+      <div class="card reveal">
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 21V9l8-6 8 6v12"/><path d="M9 21v-6h6v6"/></svg></span>
+        <h3>Construcción superior</h3>
+        <p>Bloque estructural, acabados selectos, cerámica de primera y sistemas eléctricos e hidráulicos certificados.</p>
+      </div>
+      <div class="card reveal">
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3l7 4v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V7l7-4Z"/></svg></span>
+        <h3>Circuito cerrado</h3>
+        <p>Acceso controlado con garita, muro perimetral y vigilancia permanente. Privacidad y tranquilidad absolutas.</p>
+      </div>
+      <div class="card reveal">
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M8 13c1 1.5 2.5 2 4 2s3-.5 4-2"/><circle cx="9" cy="10" r=".5" fill="currentColor"/><circle cx="15" cy="10" r=".5" fill="currentColor"/></svg></span>
+        <h3>Áreas verdes</h3>
+        <p>Parques, zonas de juego y espacios abiertos diseñados para la convivencia y la vida al aire libre.</p>
+      </div>
+      <div class="card reveal">
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2 4.5 13.5H11L9.5 22 19 10h-6l0-8Z"/></svg></span>
+        <h3>Infraestructura completa</h3>
+        <p>Agua potable, energía, aguas negras, calles pavimentadas, aceras y alumbrado público incluidos.</p>
+      </div>
+      <div class="card reveal">
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 8V3m0 5a4 4 0 1 0 0 8 4 4 0 0 0 0-8Zm0 8v5M4 12h4m8 0h4"/></svg></span>
+        <h3>Acompañamiento total</h3>
+        <p>Asesoría personalizada y gratuita: precalificación, papelería, trámite RAP o bancario y entrega de llaves.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STATEMENT ============ -->
+<div class="statement">
+  <div class="rule"></div>
+  <h2 class="reveal wrap">Te acercamos a <em>lo tuyo</em></h2>
+  <div class="sig reveal">Inmobiliaria Su Vivienda · Paseo Las Campanas</div>
+</div>
+
+<!-- ============ MODELOS ============ -->
+<section id="modelos">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">02 — Modelos</span>
+      <h2>Dos modelos, <em>una misma calidad</em></h2>
+      <p>Renders reales del proyecto. Cambia entre modelos en el video superior y compara sus características.</p>
+    </div>
+
+    <!-- ====== VELLA ====== -->
+    <div class="model reveal">
+      <div class="model-visual">
+        <img src="img/vella.jpg" alt="Fachada frontal Modelo Vella" loading="lazy" />
+        <span class="tag">Vella · 65 m²</span>
+      </div>
+      <div class="model-body">
+        <span class="mnum">Modelo N.º 1</span>
+        <h3>Vella</h3>
+        <p class="sub">Diseño moderno con fachada de acento y portón frontal. Eficiente en cada metro, ideal como primera vivienda con cuota accesible vía RAP.</p>
+        <!-- EDITAR: areas y habitaciones reales del modelo Vella -->
+        <div class="spec-grid">
+          <div class="sp"><b>65</b><span>m² constr.</span></div>
+          <div class="sp"><b>—</b><span>V² terreno</span></div>
+          <div class="sp"><b>2</b><span>Habitaciones</span></div>
+          <div class="sp"><b>1</b><span>Baños</span></div>
+        </div>
+        <h4>Distribución</h4>
+        <div class="detail-cols">
+          <ul class="ticks">
+            <li>Sala, comedor y cocina en concepto abierto</li>
+            <li>Habitaciones con closet</li>
+          </ul>
+          <ul class="ticks">
+            <li>Área de lavado</li>
+            <li>Estacionamiento con portón</li>
+          </ul>
+        </div>
+        <h4>Acabados</h4>
+        <div class="detail-cols">
+          <!-- EDITAR: acabados reales -->
+          <ul class="ticks">
+            <li>Piso cerámico en toda la casa</li>
+            <li>Fachada con acento de color</li>
+          </ul>
+          <ul class="ticks">
+            <li>Ventanas de aluminio y vidrio</li>
+            <li>Iluminación exterior</li>
+          </ul>
+        </div>
+        <div class="price-row">
+          <!-- EDITAR: precio real Vella -->
+          <div class="price">Precio bajo consulta<small>Cuotas accesibles con financiamiento RAP</small></div>
+          <a class="btn" href="#contacto" data-quote="Vella">Cotizar Vella</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ====== ESPERANZA ====== -->
+    <div class="model rev reveal">
+      <div class="model-visual">
+        <img src="img/esperanza.jpg" alt="Fachada frontal Modelo Esperanza" loading="lazy" />
+        <span class="tag">Esperanza</span>
+      </div>
+      <div class="model-body">
+        <span class="mnum">Modelo N.º 2</span>
+        <h3>Esperanza</h3>
+        <p class="sub">Fachada contemporánea con paneles de acento y doble iluminación exterior. Espacios amplios y luminosos para tu familia.</p>
+        <!-- EDITAR: areas y habitaciones reales del modelo Esperanza -->
+        <div class="spec-grid">
+          <div class="sp"><b>—</b><span>m² constr.</span></div>
+          <div class="sp"><b>—</b><span>V² terreno</span></div>
+          <div class="sp"><b>2</b><span>Habitaciones</span></div>
+          <div class="sp"><b>1</b><span>Baños</span></div>
+        </div>
+        <h4>Distribución</h4>
+        <div class="detail-cols">
+          <ul class="ticks">
+            <li>Sala y comedor integrados</li>
+            <li>Cocina con área de pantry</li>
+          </ul>
+          <ul class="ticks">
+            <li>Patio frontal con jardín</li>
+            <li>Área de lavado independiente</li>
+          </ul>
+        </div>
+        <h4>Acabados</h4>
+        <div class="detail-cols">
+          <!-- EDITAR: acabados reales -->
+          <ul class="ticks">
+            <li>Paneles decorativos en fachada</li>
+            <li>Piso cerámico de primera</li>
+          </ul>
+          <ul class="ticks">
+            <li>Ventanas de aluminio y vidrio</li>
+            <li>Lámparas exteriores incluidas</li>
+          </ul>
+        </div>
+        <div class="price-row">
+          <!-- EDITAR: precio real Esperanza -->
+          <div class="price">Precio bajo consulta<small>Financiamiento RAP y bancario disponible</small></div>
+          <a class="btn dark" href="#contacto" data-quote="Esperanza">Cotizar Esperanza</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COMPARATIVA ============ -->
+<section id="comparativa" style="padding-top:40px">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">03 — Comparativa</span>
+      <h2>Elige con <em>total claridad</em></h2>
+    </div>
+    <div class="compare reveal">
+      <table>
+        <thead>
+          <tr><th>Característica</th><th>Vella</th><th>Esperanza</th></tr>
+        </thead>
+        <tbody>
+          <!-- EDITAR: datos reales de cada modelo -->
+          <tr><th>Construcción</th><td class="gold-td">65 m²</td><td class="gold-td">— m²</td></tr>
+          <tr><th>Terreno</th><td>— V²</td><td>— V²</td></tr>
+          <tr><th>Habitaciones</th><td>2</td><td>2</td></tr>
+          <tr><th>Baños</th><td>1</td><td>1</td></tr>
+          <tr><th>Estacionamiento</th><td>1 vehículo, con portón</td><td>1 vehículo</td></tr>
+          <tr><th>Ideal para</th><td>Primera vivienda / parejas</td><td>Familias en crecimiento</td></tr>
+          <tr><th>Precio</th><td>Bajo consulta</td><td>Bajo consulta</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROCESO ============ -->
+<section id="proceso" style="padding-top:40px">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">04 — El proceso</span>
+      <h2>Tu casa en <em>cuatro pasos</em></h2>
+    </div>
+    <div class="steps">
+      <div class="step reveal">
+        <div class="num">01</div>
+        <h3>Precalificación</h3>
+        <p>Evaluamos sin costo tu capacidad de financiamiento — RAP o banca — y te indicamos a qué modelo aplicas.</p>
+      </div>
+      <div class="step reveal">
+        <div class="num">02</div>
+        <h3>Reserva</h3>
+        <p>Eliges tu casa y ubicación dentro del proyecto, y la aseguras con una reserva. <!-- EDITAR: monto de reserva --></p>
+      </div>
+      <div class="step reveal">
+        <div class="num">03</div>
+        <h3>Trámite</h3>
+        <p>Gestionamos contigo toda la documentación ante el RAP o el banco, hasta la aprobación del crédito.</p>
+      </div>
+      <div class="step reveal">
+        <div class="num">04</div>
+        <h3>Entrega</h3>
+        <p>Firma de escritura, acta de entrega y garantía de construcción. ¡Bienvenido a lo tuyo!</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FINANCIAMIENTO ============ -->
+<section id="financiamiento" style="padding-top:40px">
+  <div class="wrap">
+    <div class="band reveal">
+      <div class="band-grid">
+        <div>
+          <span class="eyebrow">05 — Financiamiento</span>
+          <h2>Tasas preferenciales con <em>RAP y BANHPROVI</em></h2>
+          <p>Trabajamos con las dos mejores opciones de financiamiento de vivienda en Honduras: el Régimen de Aportaciones Privadas (RAP) y los fondos de BANHPROVI a través de la banca nacional. Te asesoramos gratis para elegir la que más te conviene.</p>
+          <div class="pill-row">
+            <div class="pill"><b>BANHPROVI · 4% fija</b>vivienda social hasta L 1.3 millones</div>
+            <div class="pill"><b>BANHPROVI · 7% fija</b>clase media hasta L 4 millones</div>
+            <div class="pill"><b>RAP · desde 9%</b>afiliados (9% – 10.5% según ingreso)</div>
+            <div class="pill"><b>Hasta 30 años</b>de plazo en ambas opciones</div>
+          </div>
+          <div class="fin-logos">
+            <div class="fl"><img src="img/logos/rap.png" alt="RAP — Régimen de Aportaciones Privadas" loading="lazy"></div>
+            <div class="fl"><img src="img/logos/banhprovi.png" alt="BANHPROVI — Banco Hondureño para la Producción y la Vivienda" loading="lazy"></div>
+          </div>
+          <p class="fin-note">Instituciones oficiales de financiamiento de vivienda en Honduras. Logos propiedad de sus titulares.</p>
+          <div style="margin-top:30px"><a class="btn" href="#contacto">Precalificar sin costo</a></div>
+        </div>
+        <div class="req-card">
+          <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 12l2 2 4-5"/><circle cx="12" cy="12" r="9"/></svg>Requisitos básicos</h3>
+          <ul class="ticks">
+            <li>Tarjeta de identidad vigente</li>
+            <li>Constancia de trabajo y de sueldo</li>
+            <li>RAP: 12 meses continuos de aportaciones (3% del ingreso)</li>
+            <li>Constancia de aportaciones al día</li>
+            <li>No tener vivienda financiada previamente con RAP</li>
+            <li>Récord crediticio sano</li>
+            <li>BANHPROVI: aplicar mediante banco intermediario — te guiamos</li>
+          </ul>
+          <p class="note">¿No cumples alguno? Escríbenos — encontramos la mejor opción para tu caso.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CALCULADORA DE CUOTA ============ -->
+<section id="calculadora" style="padding-top:80px">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">06 — Calculadora</span>
+      <h2>Simula tu <em>cuota mensual</em></h2>
+      <p>Mueve los controles y descubre cuánto pagarías al mes por tu casa en Paseo Las Campanas.</p>
+    </div>
+    <div class="calc reveal">
+      <div class="calc-controls">
+        <!-- EDITAR: ajusta rangos y valores por defecto a tus precios reales -->
+        <div class="calc-field">
+          <div class="cf-head"><label>Precio de la casa</label><output id="c-precio-out">L 1,500,000</output></div>
+          <input type="range" id="c-precio" min="800000" max="3500000" step="25000" value="1500000">
+        </div>
+        <div class="calc-field">
+          <div class="cf-head"><label>Prima (enganche)</label><output id="c-prima-out">10%</output></div>
+          <input type="range" id="c-prima" min="0" max="30" step="1" value="10">
+        </div>
+        <div class="calc-field">
+          <div class="cf-head"><label>Plazo</label><output id="c-plazo-out">25 años</output></div>
+          <input type="range" id="c-plazo" min="5" max="30" step="1" value="25">
+        </div>
+        <div class="calc-field" style="margin-bottom:10px">
+          <div class="cf-head"><label>Tasa anual</label><output id="c-tasa-out">9.0%</output></div>
+          <input type="range" id="c-tasa" min="4" max="15" step="0.1" value="9">
+          <div class="tasa-presets">
+            <button type="button" data-tasa="4" title="Vivienda social hasta L 1.3M">BANHPROVI 4%</button>
+            <button type="button" data-tasa="7" title="Clase media hasta L 4M">BANHPROVI 7%</button>
+            <button type="button" data-tasa="9" class="on" title="Afiliados RAP">RAP 9%</button>
+            <button type="button" data-tasa="10.5" title="RAP ingresos mayores">RAP 10.5%</button>
+          </div>
+        </div>
+      </div>
+      <div class="calc-result">
+        <span class="cr-label">Cuota mensual estimada</span>
+        <div class="cr-amount" id="c-cuota">L 0<small>/mes</small></div>
+        <span class="cr-sub">Menos que muchos alquileres de la zona.</span>
+        <div class="cr-rows">
+          <div><span>Prima a pagar</span><b id="c-prima-monto">L 0</b></div>
+          <div><span>Monto a financiar</span><b id="c-financiado">L 0</b></div>
+          <div><span>Pagos totales</span><b id="c-pagos">0</b></div>
+        </div>
+        <a class="btn" id="c-wa" href="#" target="_blank" rel="noopener">Enviar simulación por WhatsApp</a>
+        <p class="disclaimer">* Cálculo ilustrativo. La cuota final depende de la tasa aprobada por el RAP o el banco, seguros y gastos de cierre.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIOS ============ -->
+<section id="testimonios" style="padding-top:80px">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="eyebrow center">07 — Testimonios</span>
+      <h2>Familias que ya <em>viven lo suyo</em></h2>
+    </div>
+    <div class="grid g-3">
+      <!-- EDITAR: testimonios reales de clientes -->
+      <div class="testi reveal">
+        <div class="stars">★★★★★</div>
+        <p>"El proceso fue mucho más sencillo de lo que imaginé. Me acompañaron con toda la papelería del RAP y en pocos meses ya teníamos las llaves."</p>
+        <div class="who"><span class="av">MR</span><div><b>María R.</b><span>Modelo Vella</span></div></div>
+      </div>
+      <div class="testi reveal">
+        <div class="stars">★★★★★</div>
+        <p>"Comparamos varios proyectos y la relación calidad-precio no tiene comparación. Los acabados superaron lo prometido."</p>
+        <div class="who"><span class="av">JC</span><div><b>José C.</b><span>Modelo Esperanza</span></div></div>
+      </div>
+      <div class="testi reveal">
+        <div class="stars">★★★★★</div>
+        <p>"Siempre respondieron el WhatsApp, incluso fines de semana. Se siente que te acompañan de verdad, no solo que te quieren vender."</p>
+        <div class="who"><span class="av">KP</span><div><b>Karla P.</b><span>Compradora 2025</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ UBICACION ============ -->
+<section id="ubicacion" style="padding-top:80px">
+  <div class="wrap">
+    <div class="loc reveal">
+      <div class="loc-card">
+        <span class="eyebrow">08 — Ubicación</span>
+        <h2>Cerca de todo <em>lo que importa</em></h2>
+        <p>En una zona de fácil acceso y alta plusvalía, conectada con los principales servicios de la ciudad.</p>
+        <div class="loc-list">
+          <!-- EDITAR: distancias / referencias reales -->
+          <div><span>Centro comercial</span><span>10 min</span></div>
+          <div><span>Escuelas y colegios</span><span>5 min</span></div>
+          <div><span>Hospital / clínicas</span><span>12 min</span></div>
+          <div><span>Supermercado</span><span>7 min</span></div>
+          <div><span>Vía principal</span><span>3 min</span></div>
+        </div>
+        <div style="margin-top:34px;position:relative"><a class="btn" href="#contacto">Solicitar dirección exacta</a></div>
+      </div>
+      <div class="map-embed">
+        <!-- EDITAR: reemplaza el src con el mapa de la ubicacion real -->
+        <iframe title="Mapa Paseo Las Campanas" loading="lazy"
+          src="https://www.google.com/maps?q=Honduras&output=embed"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALERIA ============ -->
+<section id="galeria" style="padding-top:80px">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">09 — Galería</span>
+      <h2>Renders <em>del proyecto</em></h2>
+      <p>Imágenes reales del residencial Paseo Las Campanas. <!-- EDITAR: agrega mas fotos en la carpeta img/ --></p>
+    </div>
+    <div class="gallery reveal">
+      <div class="tile big"><img src="img/vella.jpg" alt="Fachada Modelo Vella" loading="lazy" /><span class="cap">Modelo Vella</span></div>
+      <div class="tile"><img src="img/esperanza.jpg" alt="Fachada Modelo Esperanza" loading="lazy" /><span class="cap">Modelo Esperanza</span></div>
+      <div class="tile"><img src="img/promo-vella-w.jpg" alt="Promocional Vella" loading="lazy" /><span class="cap">Vella · 65 m²</span></div>
+      <div class="tile"><img src="img/promo-esperanza-w.jpg" alt="Promocional Esperanza" loading="lazy" /><span class="cap">Esperanza</span></div>
+      <div class="tile"><img src="img/esperanza.jpg" alt="Detalle fachada" loading="lazy" style="object-position:left center" /><span class="cap">Detalle fachada</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section id="faq" style="padding-top:80px">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="eyebrow center">10 — Preguntas frecuentes</span>
+      <h2>Resolvemos <em>tus dudas</em></h2>
+    </div>
+    <div class="faq reveal">
+      <!-- EDITAR: respuestas segun condiciones reales -->
+      <details>
+        <summary>¿Puedo comprar si no soy afiliado al RAP?</summary>
+        <div class="a">Sí. Además del RAP trabajamos con fondos BANHPROVI a través de la banca nacional: tasa fija del 4% para vivienda social (hasta L 1.3 millones) y 7% para clase media (hasta L 4 millones), ambas con plazos de hasta 30 años. Te precalificamos sin costo y te recomendamos la opción con mejor cuota para tu perfil.</div>
+      </details>
+      <details>
+        <summary>¿Qué tasa me da el RAP y qué necesito?</summary>
+        <div class="a">El RAP ofrece tasa del 9% anual para quienes ganan hasta dos salarios mínimos y 10.5% para ingresos mayores, con plazos de hasta 30 años. El requisito principal es tener 12 meses continuos de aportaciones (el 3% de tu ingreso) y récord crediticio sano.</div>
+      </details>
+      <details>
+        <summary>¿De cuánto es la prima y se puede pagar en cuotas?</summary>
+        <div class="a">La prima depende del modelo y del tipo de financiamiento. Ofrecemos planes de prima flexible para pagarla en cuotas mientras se construye tu casa. Escríbenos y te enviamos la tabla de pagos actualizada.</div>
+      </details>
+      <details>
+        <summary>¿Qué incluye el precio de la casa?</summary>
+        <div class="a">Incluye el lote, la construcción con los acabados descritos por modelo, conexión a servicios (agua, luz, aguas negras) y las áreas comunes del residencial. La escrituración y gastos de cierre se detallan en tu cotización.</div>
+      </details>
+      <details>
+        <summary>¿Cuándo se entregan las casas?</summary>
+        <div class="a">La fecha de entrega depende de la etapa y del lote elegido; te la confirmamos por escrito en tu contrato de promesa de compraventa.</div>
+      </details>
+      <details>
+        <summary>¿Puedo visitar el proyecto antes de decidir?</summary>
+        <div class="a">Por supuesto. Agenda una visita por WhatsApp: te mostramos el terreno, la casa modelo y resolvemos todas tus preguntas en el sitio, sin compromiso.</div>
+      </details>
+      <details>
+        <summary>¿Las casas tienen garantía?</summary>
+        <div class="a">Sí, todas nuestras viviendas se entregan con acta de entrega y garantía de construcción. Los detalles de cobertura y vigencia se especifican en tu contrato.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACTO ============ -->
+<section id="contacto" style="padding-top:80px">
+  <div class="wrap">
+    <div class="contact">
+      <div class="contact-info reveal">
+        <span class="eyebrow">11 — Contacto</span>
+        <h2>Hablemos de <em>lo tuyo</em></h2>
+        <p>Escríbenos y te enviamos precios, planos, tabla de pagos y disponibilidad de Paseo Las Campanas. Respondemos de inmediato.</p>
+
+        <!-- EDITAR: datos de contacto reales -->
+        <a class="ci-item" href="https://wa.me/504XXXXXXXX" target="_blank" rel="noopener">
+          <span class="ico"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.5-.1-.7.1-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-1.6-.8-2.6-1.4-3.7-3.2-.3-.5.3-.5.8-1.5.1-.2 0-.4 0-.5 0-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.5c-.2 0-.5.1-.7.3-.9.9-1.1 2-.6 3.4.6 1.6 1.7 3 3.2 4.2 2.4 1.9 4.1 2 5.3 1.9.7-.1 1.7-.7 2-1.4.2-.5.2-1 .1-1.1-.1-.2-.3-.2-.6-.3Z"/><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.1-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-2.9-.4-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/></svg></span>
+          <div><b>WhatsApp</b><span>+504 XXXX-XXXX · respuesta inmediata</span></div>
+        </a>
+        <a class="ci-item" href="tel:+504XXXXXXXX">
+          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .3 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.5 2.8.6a2 2 0 0 1 1.7 2.1Z"/></svg></span>
+          <div><b>Teléfono</b><span>+504 XXXX-XXXX</span></div>
+        </a>
+        <a class="ci-item" href="mailto:info@suvivienda.hn">
+          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
+          <div><b>Correo</b><span>info@suvivienda.hn</span></div>
+        </a>
+        <a class="ci-item" href="https://www.facebook.com/suviviendahn" target="_blank" rel="noopener">
+          <span class="ico"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 9h3V6h-3c-2 0-3.5 1.5-3.5 3.5V11H8v3h2.5v6h3v-6H16l.5-3H13.5V9.5C13.5 9.2 13.7 9 14 9Z"/></svg></span>
+          <div><b>Facebook</b><span>@suviviendahn · síguenos para novedades</span></div>
+        </a>
+
+        <div class="sched">
+          <span class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+          <div>
+            <!-- EDITAR: horario real de atencion -->
+            <b>Horario de atención</b>
+            <span>Lunes a sábado · 8:00 – 17:00 &nbsp;|&nbsp; WhatsApp 24/7</span>
+          </div>
+        </div>
+      </div>
+
+      <form class="lead-form reveal" id="leadForm">
+        <h3>Solicita tu cotización</h3>
+        <p class="fh">Completa el formulario y te contactamos por WhatsApp con toda la información.</p>
+        <div class="two">
+          <div class="field"><label>Nombre completo</label><input type="text" id="f-nombre" required placeholder="Tu nombre" /></div>
+          <div class="field"><label>Teléfono / WhatsApp</label><input type="tel" id="f-tel" required placeholder="+504 ..." /></div>
+        </div>
+        <div class="field"><label>Correo (opcional)</label><input type="email" id="f-email" placeholder="tucorreo@ejemplo.com" /></div>
+        <div class="two">
+          <div class="field"><label>Modelo de interés</label>
+            <select id="f-modelo">
+              <option>Vella</option>
+              <option>Esperanza</option>
+              <option>Ambos / No estoy seguro</option>
+            </select>
+          </div>
+          <div class="field"><label>¿Afiliado al RAP?</label>
+            <select id="f-rap">
+              <option>Sí, soy afiliado</option>
+              <option>No / No estoy seguro</option>
+            </select>
+          </div>
+        </div>
+        <div class="field"><label>Mensaje</label><textarea id="f-msg" placeholder="Me gustaría recibir precios, planos y tabla de pagos..."></textarea></div>
+        <button class="btn" type="submit">Enviar por WhatsApp</button>
+        <p class="form-note">Se abrirá WhatsApp con tu mensaje listo para enviar. Sin compromiso.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="#top" style="margin-bottom:18px">
+          <span class="mark"><svg viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5" stroke="#ef8b21"/><path d="M5 9.5V21h14V9.5"/></svg></span>
+          <span class="bt"><b>Su Vivienda</b><small>Inmobiliaria</small></span>
+        </a>
+        <p style="max-width:300px">Te acercamos a lo tuyo. Proyectos de calidad y financiamiento accesible en Honduras.</p>
+      </div>
+      <div>
+        <h4>Proyecto</h4>
+        <a href="#modelos">Modelo Vella</a>
+        <a href="#modelos">Modelo Esperanza</a>
+        <a href="#comparativa">Comparativa</a>
+        <a href="#financiamiento">Financiamiento RAP · BANHPROVI</a>
+        <a href="#calculadora">Calculadora de cuota</a>
+        <a href="#faq">Preguntas frecuentes</a>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <a href="https://wa.me/504XXXXXXXX" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="mailto:info@suvivienda.hn">info@suvivienda.hn</a>
+        <a href="https://www.facebook.com/suviviendahn" target="_blank" rel="noopener">Facebook @suviviendahn</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <small>© 2026 Inmobiliaria Su Vivienda · Honduras. Todos los derechos reservados.</small>
+      <small>Imágenes y datos ilustrativos, sujetos a cambios sin previo aviso.</small>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ BOT ASESOR VIRTUAL ============ -->
+<button class="bot-fab" id="botFab" aria-label="Abrir asistente virtual">
+  <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 8.9 8.9 0 0 1-3.7-.8L3 20l1-4.9a8.3 8.3 0 0 1-1-4A8.4 8.4 0 0 1 12 3a8.4 8.4 0 0 1 9 8.5Z"/><path d="M8.5 10.5h.01M12 10.5h.01M15.5 10.5h.01"/></svg>
+  <span class="dot"></span>
+</button>
+<div class="bot-panel" id="botPanel" role="dialog" aria-label="Asistente virtual">
+  <div class="bot-head">
+    <span class="ava"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round"><rect x="5" y="8" width="14" height="11" rx="2"/><path d="M12 8V5m-3.5 8h.01M15.5 13h.01M9 16.5c1 .8 5 .8 6 0"/><circle cx="12" cy="4" r="1"/></svg></span>
+    <div><b>Asistente Su Vivienda</b><span><i></i>En línea · responde al instante</span></div>
+    <button class="bot-close" id="botClose" aria-label="Cerrar">×</button>
+  </div>
+  <div class="bot-body" id="botBody"></div>
+</div>
+
+<!-- floating whatsapp -->
+<a class="wa-float" id="waFloat" href="https://wa.me/504XXXXXXXX" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.5-.1-.7.1-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-1.6-.8-2.6-1.4-3.7-3.2-.3-.5.3-.5.8-1.5.1-.2 0-.4 0-.5 0-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.5c-.2 0-.5.1-.7.3-.9.9-1.1 2-.6 3.4.6 1.6 1.7 3 3.2 4.2 2.4 1.9 4.1 2 5.3 1.9.7-.1 1.7-.7 2-1.4.2-.5.2-1 .1-1.1-.1-.2-.3-.2-.6-.3Z"/><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.1-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-2.9-.4-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/></svg>
+</a>
+
+<script>
+/* =============================================================
+   CONFIGURACION RAPIDA  —  EDITA AQUI
+   ============================================================= */
+const CONFIG = {
+  whatsapp: "504XXXXXXXX",         // EDITAR: numero WhatsApp (solo digitos, con codigo 504)
+  telefono: "+504XXXXXXXX",        // EDITAR: telefono
+  correo:   "info@suvivienda.hn",  // EDITAR: correo
+  facebook: "https://www.facebook.com/suviviendahn"
+};
+
+(function applyConfig(){
+  const wa = "https://wa.me/" + CONFIG.whatsapp;
+  document.querySelectorAll('a[href^="https://wa.me/"]').forEach(a=>a.href=wa);
+  document.querySelectorAll('a[href^="tel:"]').forEach(a=>a.href="tel:"+CONFIG.telefono);
+  document.querySelectorAll('a[href^="mailto:"]').forEach(a=>a.href="mailto:"+CONFIG.correo);
+})();
+
+/* ---------- PRELOADER ---------- */
+window.addEventListener('load',()=>setTimeout(()=>document.getElementById('loader').classList.add('done'),600));
+setTimeout(()=>document.getElementById('loader').classList.add('done'),4000);
+
+/* ---------- NAV + PROGRESO ---------- */
+const nav = document.getElementById('nav');
+const prog = document.getElementById('progress');
+addEventListener('scroll',()=>{
+  nav.classList.toggle('scrolled', scrollY>40);
+  const h=document.documentElement;
+  prog.style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+'%';
+});
+const menu = document.getElementById('menu'), navToggle = document.getElementById('navToggle');
+navToggle.addEventListener('click',()=>menu.classList.toggle('open'));
+menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>menu.classList.remove('open')));
+
+/* nav claro sobre el hero oscuro */
+const brandName=document.getElementById('brandName');
+function navTone(){
+  const overHero = scrollY < innerHeight-80 && !menu.classList.contains('open');
+  document.querySelectorAll('#menu a').forEach(a=>a.style.color = overHero&&!nav.classList.contains('scrolled') ? 'rgba(255,255,255,.85)' : '');
+  brandName.style.color = overHero&&!nav.classList.contains('scrolled') ? '#fff' : '';
+  navToggle.style.color = overHero&&!nav.classList.contains('scrolled') ? '#fff' : '';
+}
+addEventListener('scroll',navTone); navTone();
+
+/* ---------- CURSOR PERSONALIZADO ---------- */
+(function(){
+  const ring=document.getElementById('cursorRing');
+  if(matchMedia('(hover:none)').matches) return;
+  let mx=innerWidth/2,my=innerHeight/2,rx=mx,ry=my;
+  addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;ring.classList.add('on')});
+  (function loop(){rx+=(mx-rx)*.16;ry+=(my-ry)*.16;
+    ring.style.left=rx+'px';ring.style.top=ry+'px';requestAnimationFrame(loop)})();
+  document.querySelectorAll('a,button,summary,.tile').forEach(el=>{
+    el.addEventListener('mouseenter',()=>ring.classList.add('big'));
+    el.addEventListener('mouseleave',()=>ring.classList.remove('big'));
+  });
+})();
+
+/* ---------- REVELADO ESCALONADO ---------- */
+const io = new IntersectionObserver((es)=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.1});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+document.querySelectorAll('.grid,.steps,.gallery,.hero-copy').forEach(p=>{
+  [...p.children].forEach((c,i)=>{if(c.classList.contains('reveal'))c.style.transitionDelay=(i*110)+'ms'});
+});
+
+/* ---------- HERO: CAMBIO DE RENDER (plano frontal) ---------- */
+document.querySelectorAll('#modelSwitch button').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    document.querySelectorAll('#modelSwitch button').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+    document.querySelectorAll('#heroBg .shot').forEach(s=>{
+      s.classList.toggle('on', s.dataset.model===btn.dataset.model);
+    });
+  });
+});
+
+/* ---------- FORM -> WHATSAPP ---------- */
+const form = document.getElementById('leadForm');
+form.addEventListener('submit',(e)=>{
+  e.preventDefault();
+  const n=document.getElementById('f-nombre').value.trim();
+  const t=document.getElementById('f-tel').value.trim();
+  const em=document.getElementById('f-email').value.trim();
+  const m=document.getElementById('f-modelo').value;
+  const r=document.getElementById('f-rap').value;
+  const msg=document.getElementById('f-msg').value.trim();
+  let txt=`Hola Inmobiliaria Su Vivienda 👋, me interesa *Paseo Las Campanas*.%0A%0A`;
+  txt+=`*Nombre:* ${n}%0A*Teléfono:* ${t}%0A`;
+  if(em) txt+=`*Correo:* ${em}%0A`;
+  txt+=`*Modelo de interés:* ${m}%0A*Afiliado RAP:* ${r}%0A`;
+  if(msg) txt+=`*Mensaje:* ${msg}%0A`;
+  window.open(`https://wa.me/${CONFIG.whatsapp}?text=${txt}`,'_blank');
+});
+document.querySelectorAll('[data-quote]').forEach(b=>b.addEventListener('click',()=>{
+  document.getElementById('f-modelo').value=b.dataset.quote;
+}));
+
+/* =============================================================
+   CALCULADORA DE CUOTA
+   ============================================================= */
+(function(){
+  const $=id=>document.getElementById(id);
+  const fmt=n=>'L '+Math.round(n).toLocaleString('es-HN');
+  function calc(){
+    const precio=+$('c-precio').value, primaPct=+$('c-prima').value,
+          anios=+$('c-plazo').value, tasa=+$('c-tasa').value;
+    const prima=precio*primaPct/100, financiado=precio-prima;
+    const r=tasa/100/12, n=anios*12;
+    const cuota=r>0 ? financiado*r/(1-Math.pow(1+r,-n)) : financiado/n;
+    $('c-precio-out').textContent=fmt(precio);
+    $('c-prima-out').textContent=primaPct+'%';
+    $('c-plazo-out').textContent=anios+' años';
+    $('c-tasa-out').textContent=tasa.toFixed(1)+'%';
+    $('c-cuota').innerHTML=fmt(cuota)+'<small>/mes</small>';
+    $('c-prima-monto').textContent=fmt(prima);
+    $('c-financiado').textContent=fmt(financiado);
+    $('c-pagos').textContent=n+' cuotas';
+    const txt=`Hola Su Vivienda 👋, hice una simulación en la web de *Paseo Las Campanas*:%0A%0A`+
+      `*Precio:* ${fmt(precio)}%0A*Prima:* ${primaPct}%25 (${fmt(prima)})%0A`+
+      `*Plazo:* ${anios} años · *Tasa:* ${tasa.toFixed(1)}%25%0A`+
+      `*Cuota estimada:* ${fmt(cuota)}/mes%0A%0A¿Me pueden dar más información?`;
+    $('c-wa').href=`https://wa.me/${CONFIG.whatsapp}?text=${txt}`;
+  }
+  ['c-precio','c-prima','c-plazo','c-tasa'].forEach(id=>$(id).addEventListener('input',calc));
+  document.querySelectorAll('.tasa-presets button').forEach(b=>b.addEventListener('click',()=>{
+    $('c-tasa').value=b.dataset.tasa;
+    document.querySelectorAll('.tasa-presets button').forEach(x=>x.classList.toggle('on',x===b));
+    calc();
+  }));
+  $('c-tasa').addEventListener('input',()=>document.querySelectorAll('.tasa-presets button').forEach(x=>x.classList.remove('on')));
+  calc();
+})();
+
+/* =============================================================
+   BOT ASESOR VIRTUAL (guiado, sin backend)
+   ============================================================= */
+(function(){
+  const fab=document.getElementById('botFab'), panel=document.getElementById('botPanel'),
+        body=document.getElementById('botBody'), close=document.getElementById('botClose');
+  const wa=t=>`https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(t)}`;
+
+  /* EDITAR: ajusta los textos del bot a tus condiciones reales */
+  const FLOWS={
+    inicio:{text:"¡Hola! 👋 Soy el asistente de Su Vivienda.\n¿Sobre qué te gustaría saber de Paseo Las Campanas?",
+      opts:["🏠 Modelos","💰 Precios","🏦 Financiamiento RAP","🏛 BANHPROVI","📋 Requisitos","📅 Agendar visita","🧮 Simular cuota"]},
+    "🏠 Modelos":{text:"Tenemos 2 modelos disponibles:\n\n• VELLA — 65 m², 2 habitaciones, diseño moderno con portón frontal.\n• ESPERANZA — fachada contemporánea con paneles de acento.\n\n¿Quieres verlos en detalle?",
+      opts:["Ver modelos en la web","💬 Cotizar por WhatsApp","↩ Menú"]},
+    "💰 Precios":{text:"Los precios varían según el modelo y la etapa del proyecto. Te enviamos la lista de precios y tabla de pagos actualizada al instante por WhatsApp, sin compromiso. 📄",
+      opts:["💬 Pedir precios por WhatsApp","🧮 Simular cuota","↩ Menú"]},
+    "🏦 Financiamiento RAP":{text:"Con el RAP (Régimen de Aportaciones Privadas) accedes a:\n\n• Tasa del 9% (ingresos hasta 2 salarios mínimos)\n• Tasa del 10.5% (ingresos mayores)\n• Plazos de hasta 30 años\n• Cuotas más bajas que un alquiler\n\nRequisito clave: 12 meses continuos de aportaciones. Te precalificamos gratis. ✅",
+      opts:["📋 Requisitos","🏛 BANHPROVI","💬 Precalificar por WhatsApp","↩ Menú"]},
+    "🏛 BANHPROVI":{text:"Los fondos BANHPROVI se tramitan a través de bancos nacionales:\n\n• Vivienda Social: tasa 4% FIJA — casas de hasta L 1.3 millones\n• Clase Media: tasa 7% FIJA — viviendas de L 1.3 a L 4 millones\n• Plazos de hasta 30 años\n\nSon las tasas más bajas del mercado y nosotros te guiamos en todo el trámite. 🙌",
+      opts:["🧮 Simular cuota","💬 Precalificar por WhatsApp","↩ Menú"]},
+    "📋 Requisitos":{text:"Para el crédito necesitas:\n\n• Identidad vigente\n• Constancia de trabajo y sueldo\n• RAP: 12 meses continuos de aportaciones (3% del ingreso)\n• Constancia de aportaciones al día\n• Récord crediticio sano\n• BANHPROVI: se aplica mediante banco intermediario\n\n¿No cumples alguno? Igual escríbenos, buscamos opciones. 💪",
+      opts:["💬 Hablar con un asesor","↩ Menú"]},
+    "📅 Agendar visita":{text:"¡Con gusto! 🏡 Hacemos visitas guiadas de lunes a sábado, de 8:00 am a 5:00 pm.\n\nEscríbenos por WhatsApp y coordinamos el día y la hora que mejor te quede.",
+      opts:["💬 Agendar por WhatsApp","↩ Menú"]},
+    "🧮 Simular cuota":{text:"Tenemos una calculadora interactiva aquí en la web. Mueve los controles y mira tu cuota mensual estimada al instante. 🧮",
+      opts:["Ir a la calculadora","↩ Menú"]}
+  };
+  const ACTIONS={
+    "Ver modelos en la web":()=>{location.hash='#modelos';toggle(false)},
+    "Ir a la calculadora":()=>{location.hash='#calculadora';toggle(false)},
+    "💬 Cotizar por WhatsApp":()=>window.open(wa("Hola Su Vivienda 👋, quiero cotizar una casa en Paseo Las Campanas.")),
+    "💬 Pedir precios por WhatsApp":()=>window.open(wa("Hola Su Vivienda 👋, ¿me envían la lista de precios y tabla de pagos de Paseo Las Campanas?")),
+    "💬 Precalificar por WhatsApp":()=>window.open(wa("Hola Su Vivienda 👋, quiero precalificar para financiamiento RAP en Paseo Las Campanas.")),
+    "💬 Hablar con un asesor":()=>window.open(wa("Hola Su Vivienda 👋, tengo dudas sobre los requisitos para comprar en Paseo Las Campanas.")),
+    "💬 Agendar por WhatsApp":()=>window.open(wa("Hola Su Vivienda 👋, quiero agendar una visita a Paseo Las Campanas."))
+  };
+
+  function el(cls,html){const d=document.createElement('div');d.className=cls;if(html!==undefined)d.innerHTML=html;return d}
+  function scrollEnd(){body.scrollTop=body.scrollHeight}
+  function addOpts(opts){
+    const box=el('bot-opts');
+    opts.forEach(o=>{
+      const b=document.createElement('button');b.textContent=o;
+      b.onclick=()=>{
+        box.remove();
+        body.appendChild(el('bot-msg user',o));scrollEnd();
+        if(ACTIONS[o]){ACTIONS[o]();say(FLOWS[o]?o:'inicio');return}
+        say(FLOWS[o]?o:'inicio');
+      };
+      box.appendChild(b);
+    });
+    body.appendChild(box);scrollEnd();
+  }
+  function say(key){
+    const f=FLOWS[key]||FLOWS.inicio;
+    const t=el('bot-typing','<i></i><i></i><i></i>');
+    body.appendChild(t);scrollEnd();
+    setTimeout(()=>{
+      t.remove();
+      body.appendChild(el('bot-msg bot',f.text));scrollEnd();
+      addOpts(f.opts);
+    },700);
+  }
+  let started=false;
+  function toggle(open){
+    panel.classList.toggle('open',open);
+    if(open&&!started){started=true;say('inicio')}
+  }
+  fab.onclick=()=>toggle(!panel.classList.contains('open'));
+  close.onclick=()=>toggle(false);
+  /* invitacion sutil a los 6 segundos */
+  setTimeout(()=>{if(!started)fab.style.animation='pulse 1.5s ease 3'},6000);
+})();
+</script>
+</body>
+</html>
